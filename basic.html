@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript basics</title>
+</head>
+
+<body>
+    <h1>Javascript basics</h1>
+    <ul>
+        <li>Spring</li>
+        <li>Summer</li>
+        <li>Fall</li>
+        <li>Winter</li>
+    </ul>
+    <script>
+       /*if else*/
+       let age = 19;
+
+       if (age > 17){
+        console.log("You're of age");
+       } else {
+        console.log("You are a minor")
+       }
+
+       if (age >= 18){
+        console.log("You're of age");
+       } else {
+        console.log("You are a minor")
+       }
+
+       if (age < 18){
+        console.log("You are a minor");
+       } else {
+        console.log("You're of age");
+       }
+
+       if (age <= 17){
+        console.log("You are a minor");
+       } else {
+        console.log("You're of age");
+       }
+
+       /*if-else if-else*/
+       let hour = 23;
+       if (hour>=0&&hour<=5){
+        console.log("Let me sleep");
+       } else if(hour>=6&&hour<=11) {
+        console.log("Good morning");
+       } else if(hour>=12&&hour<=18){
+        console.log("Good afternoon");
+       } else {
+        console.log("Good night");
+       }
+
+       if (hour<6){
+        console.log("Let me sleep");
+       } else if(hour> 5 &&hour< 12) {
+        console.log("Good morning");
+       } else if(hour>=11&&hour<=19){
+        console.log("Good afternoon");
+       } else {
+        console.log("Good night");
+       }
+
+       /*Ternary (condition)? true : false*/
+       console.log("Ternary operator");
+       let youAreOfAge = (age >= 18) ? "You're of age" : "You are a minor";
+       console.log(youAreOfAge);
+
+       /* switch-case*/
+       /*
+       Sunday 0
+       Monday 1
+       Tuesday 2 
+       Wednesday 3
+       Thursday 4
+       friday 5
+       Saturday 6
+       */
+      let day = 0;
+
+      switch (day) {
+        case 0:
+            console.log("Sunday");
+            break;
+        case 1:
+            console.log("Monday");
+            break;
+        case 2:
+            console.log("Tuesday");
+            break;    
+        case 3:
+            console.log("Wednesday");
+            break;
+        case 4:
+            console.log("Thursday");
+            break;   
+        case 5:
+            console.log("Friday");
+            break;   
+        case 6:
+            console.log("Saturday");
+            break;   
+        default:
+            console.log("The day does not exist");
+            break;
+      }
+    </script>
+</body>
+
+</html>
